@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="body">Body</string>
+
+    <string name="nose">Nose</string>
+    <string name="eyebrows">Eyebrows</string>
+    <string name="eyes">Eyes</string>
+    <string name="ears">Ears</string>
+    <string name="arms">Arms</string>
+    <string name="glasses">Glasses</string>
+    <string name="mouth">Mouth</string>
+    <string name="mustache">Mustache</string>
+    <string name="shoes">Shoes</string>
+    <string name="hat">Hat</string>
+
+
+</resources>
