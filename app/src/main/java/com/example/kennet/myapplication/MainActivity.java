@@ -19,15 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     /*Crate bundle when onSaveInstance is called. */
@@ -133,10 +124,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void boxChecked(View view) {
         boolean checked = ((CheckBox)view).isChecked();
-        switch (view.getId())
-        {
+        ImageView imgarms = (ImageView)findViewById(R.id.arms);
+        ImageView imgeyebrows = (ImageView)findViewById(R.id.eyebrows);
+        ImageView imgnose = (ImageView)findViewById(R.id.nose);
+        ImageView imgeyes = (ImageView)findViewById(R.id.eyes);
+        ImageView imgears = (ImageView)findViewById(R.id.ears);
+        ImageView imgglasses = (ImageView)findViewById(R.id.glasses);
+        ImageView imghat = (ImageView)findViewById(R.id.hat);
+
+        ImageView imgmouth = (ImageView)findViewById(R.id.mouth);
+        ImageView imgmustache = (ImageView)findViewById(R.id.mustache);
+        ImageView imgshoes = (ImageView)findViewById(R.id.shoes);
+        switch (view.getId()) {
             case R.id.checkarms:
-                ImageView imgarms = (ImageView)findViewById(R.id.arms);
                 if(checked) {
                     imgarms .setVisibility(View.VISIBLE);
                 }
@@ -144,9 +144,7 @@ public class MainActivity extends AppCompatActivity {
                     imgarms .setVisibility(View.INVISIBLE);
                 }
                 break;
-
             case R.id.checkeyebrows:
-                ImageView imgeyebrows = (ImageView)findViewById(R.id.eyebrows);
                 if(checked) {
                     imgeyebrows .setVisibility(View.VISIBLE);
                 }
@@ -156,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checknose:
-                ImageView imgnose = (ImageView)findViewById(R.id.nose);
                 if(checked) {
                     imgnose .setVisibility(View.VISIBLE);
                 }
@@ -166,7 +163,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkeyes:
-                ImageView imgeyes = (ImageView)findViewById(R.id.eyes);
                 if(checked) {
                     imgeyes .setVisibility(View.VISIBLE);
                 }
@@ -176,7 +172,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkears:
-                ImageView imgears = (ImageView)findViewById(R.id.ears);
                 if(checked) {
                     imgears .setVisibility(View.VISIBLE);
                 }
@@ -186,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkglasses:
-                ImageView imgglasses = (ImageView)findViewById(R.id.glasses);
                 if(checked) {
                     imgglasses .setVisibility(View.VISIBLE);
                 }
@@ -196,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkhat:
-                ImageView imghat = (ImageView)findViewById(R.id.hat);
                 if(checked) {
                     imghat .setVisibility(View.VISIBLE);
                 }
@@ -206,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkmouth:
-                ImageView imgmouth = (ImageView)findViewById(R.id.mouth);
                 if(checked) {
                     imgmouth .setVisibility(View.VISIBLE);
                 }
@@ -216,7 +208,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkmustache:
-                ImageView imgmustache = (ImageView)findViewById(R.id.mustache);
                 if(checked) {
                     imgmustache.setVisibility(View.VISIBLE);
                 }
@@ -226,7 +217,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.checkshoes:
-                ImageView imgshoes = (ImageView)findViewById(R.id.shoes);
                 if(checked) {
                     imgshoes .setVisibility(View.VISIBLE);
                 }
